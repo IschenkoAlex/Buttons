@@ -41,9 +41,6 @@ class ViewController: UIViewController {
         let storyboard = UIStoryboard(name: "VC2", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "VC2") as! VC2
         present(vc, animated: true)
-        firstButton.backgroundColor = .darkGray
-        secondButton.backgroundColor = .darkGray
-        thirdButton.backgroundColor = .darkGray
     }
     
     //MARK: - Private Methods
@@ -79,6 +76,7 @@ class ViewController: UIViewController {
         thirdButton.configuration = config
     }
     
+    
     //MARK: - Obj functions
     
     @objc func animateUp(sender: UIButton){
@@ -92,7 +90,5 @@ class ViewController: UIViewController {
                 sender.transform = .identity
             }, completion: nil)
         }
-    @objc func animation(sender: UIButton){
-        
-    }
+
 }
