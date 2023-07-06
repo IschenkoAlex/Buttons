@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Buttons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gex-aD-B9k">
+                                <rect key="frame" x="146.66666666666666" y="76" width="100" height="34.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="C4A-ma-8LP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="firstButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gse-Qt-xej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RM3-QL-MjI">
+                                <rect key="frame" x="146.66666666666666" y="178" width="100" height="34.333333333333343"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="9ju-hN-VhC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="thirdButtonPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="KlB-1E-Hib"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47c-nv-bB0">
+                                <rect key="frame" x="121.66666666666669" y="127.99999999999999" width="150" height="34.333333333333329"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="lAg-D1-VKI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="secondButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="86g-a5-uIx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gex-aD-B9k" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="0te-jX-Ado"/>
+                            <constraint firstItem="RM3-QL-MjI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8rS-Em-J1B"/>
+                            <constraint firstItem="Gex-aD-B9k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HrF-Ps-mcT"/>
+                            <constraint firstItem="47c-nv-bB0" firstAttribute="top" secondItem="Gex-aD-B9k" secondAttribute="bottom" constant="17.670000000000002" id="Znf-xS-8G7"/>
+                            <constraint firstItem="47c-nv-bB0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bBw-lx-H1b"/>
+                            <constraint firstItem="RM3-QL-MjI" firstAttribute="top" secondItem="47c-nv-bB0" secondAttribute="bottom" constant="15.67" id="sRW-0t-LyU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstButton" destination="Gex-aD-B9k" id="NNG-gq-qh2"/>
+                        <outlet property="secondButton" destination="47c-nv-bB0" id="vS2-tC-doP"/>
+                        <outlet property="thirdButton" destination="RM3-QL-MjI" id="s4P-WZ-RSW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="102" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
